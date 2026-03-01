@@ -57,7 +57,6 @@ export function Settings() {
 
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <form onSubmit={handleSave} className="p-6 space-y-6">
-
             {/* Profile Section */}
             <section className="space-y-4">
               <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-2">

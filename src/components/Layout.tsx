@@ -77,7 +77,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <X size={20} />
             </button>
           </div>
-
           {/* Navigation Links */}
           <nav className="flex flex-col gap-2">
             {navItems.map((item) => {
