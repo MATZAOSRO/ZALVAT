@@ -157,12 +157,12 @@ Toma tus decisiones basadas en el siguiente contexto en tiempo real del usuario:
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom- 6 right - 6 z - 40 p - 4 bg - brand - 600 text - white rounded - full shadow - lg transition - all ${isOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'}`}
+        className={`fixed bottom-6 right-6 z-40 p-4 bg-brand-600 text-white rounded-full shadow-lg transition-all ${isOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'}`}
       >
         <MessageSquare size={24} />
       </button>
 
-      <div className={`fixed bottom - 0 right - 0 md: bottom - 6 md: right - 6 z - 50 w - full h - full md: w - [400px] md: h - [600px] bg - white md: rounded - 2xl shadow - 2xl flex flex - col overflow - hidden transition - all ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
+      <div className={`fixed bottom-0 right-0 md:bottom-6 md:right-6 z-50 w-full h-full md:w-[400px] md:h-[600px] bg-white md:rounded-2xl shadow-2xl flex flex-col overflow-hidden transition-all ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
 
         <header className="p-4 border-b flex justify-between items-center">
           <div className="flex items-center gap-3">
@@ -210,7 +210,7 @@ Toma tus decisiones basadas en el siguiente contexto en tiempo real del usuario:
             <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
               {messages.map((msg, idx) => (
                 <div key={idx} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                  <div className={`max - w - [80 %] px - 4 py - 2 rounded - 2xl text - sm ${msg.role === 'user' ? 'bg-slate-900 text-white' : 'bg-white border'}`}>
+                  <div className={`max-w-[80%] px-4 py-2 rounded-2xl text-sm ${msg.role === 'user' ? 'bg-slate-900 text-white' : 'bg-white border'}`}>
                     {msg.role === 'user'
                       ? msg.content
                       : <Markdown>{msg.content}</Markdown>}
